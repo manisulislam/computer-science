@@ -3,7 +3,8 @@ import React from 'react';
 const Courses = () => {
     return (
         <div>
-            <h3>this is course</h3>
+            <div className='grid-rows-4'>course category</div>
+            <div className='grid-rows-8'> course content </div>
         </div>
     );
 };
