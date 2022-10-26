@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../contexts/UserContext';
 import { FaGoogle } from 'react-icons/fa';
-import { GoogleAuthProvider } from 'firebase/auth';
+import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 
 
 const LogIn = () => {
@@ -11,7 +11,10 @@ const LogIn = () => {
 
   const {signIn}= useContext(AuthContext)
   const {providerLogIn}= useContext(AuthContext)
+  const {githubProviderLogIn}= useContext(AuthContext)
+  console.log(githubProviderLogIn)
   const gogoelProvider = new GoogleAuthProvider()
+  const providerGithub = new GithubAuthProvider()
 
 
   const handleSubmit = event => {
@@ -36,6 +39,17 @@ const LogIn = () => {
       
     })
     .catch(erorr => console.error(erorr))
+
+
+   }
+   const handleGithubSignIn = ()=>{
+    githubProviderLogIn(providerGithub)
+    .then(result =>{
+      const user = result.user;
+      console.log(user)
+    })
+    .catch(erorr=> console.erorr(erorr))
+
 
 
    }
@@ -76,7 +90,7 @@ const LogIn = () => {
         </div>
         <div className="btn-group btn-group-vertical">
   <button onClick={handleGoogleSignIn} className="btn mb-3 bg-sky-500"> <FaGoogle></FaGoogle> Google</button>
-  <button className="btn bg-sky-600">github</button>
+  <button onClick={handleGithubSignIn} className="btn bg-sky-600">github</button>
 
 </div>
          

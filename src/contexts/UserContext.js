@@ -26,6 +26,9 @@ const UserContext = ({children}) => {
     const providerLogIn = (provider)=>{
         return signInWithPopup(auth, provider)
     }
+    const githubProviderLogIn = (provider)=>{
+        return signInWithPopup(auth, provider)
+    }
     useEffect(()=>{
 
        const unSubscribe=  onAuthStateChanged(auth, (currentuser)=>{
