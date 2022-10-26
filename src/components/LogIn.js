@@ -2,6 +2,8 @@ import React from 'react';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../contexts/UserContext';
+import { FaGoogle } from 'react-icons/fa';
+
 
 const LogIn = () => {
 
@@ -56,6 +58,14 @@ const LogIn = () => {
         <div className="form-control mt-6">
           <button className="btn btn-primary">Login</button>
         </div>
+        <div className="btn-group btn-group-vertical">
+  <button className="btn mb-3 bg-sky-500"> <FaGoogle></FaGoogle> Google</button>
+  <button className="btn bg-sky-600">github</button>
+
+</div>
+         
+       
+        
       </form>
     </div>
   </div>
