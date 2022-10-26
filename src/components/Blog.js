@@ -43,10 +43,14 @@ const Blog = () => {
 
 <div tabIndex={0} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
   <div className="collapse-title text-xl font-medium">
-    Focus me to see content
+  What is Node? How does Node work?
   </div>
   <div className="collapse-content"> 
-    <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+    <p>
+        
+    It is a used as backend service where javascript works on the server-side of the application. This way javascript is used on both frontend and backend. Node. js runs on chrome v8 engine which converts javascript code into machine code, it is highly scalable, lightweight, fast, and data-intensive.
+        
+        </p>
   </div>
 </div>
         </div>
