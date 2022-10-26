@@ -3,7 +3,7 @@ import React from 'react';
 const Blog = () => {
     return (
         <div className=''>
-            <h3>blog page</h3>
+            <h3>Welcome To Learn Academy Blog</h3>
             <div tabIndex={0} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
   <div className="collapse-title text-xl font-medium">
    What is CORS?
