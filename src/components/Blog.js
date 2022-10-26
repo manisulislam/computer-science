@@ -30,10 +30,14 @@ const Blog = () => {
 
 <div tabIndex={0} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
   <div className="collapse-title text-xl font-medium">
-    Focus me to see content
+  How does the private route work?
   </div>
   <div className="collapse-content"> 
-    <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+    <p>
+        
+    The private route component is similar to the public route, the only change is that redirect URL and authenticate condition. If the user is not authenticated he will be redirected to the login page and the user can only access the authenticated routes If he is authenticated (Logged in).
+    
+    </p>
   </div>
 </div>
 
