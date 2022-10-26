@@ -17,10 +17,14 @@ const Blog = () => {
 
 <div tabIndex={0} className="collapse collapse-plus border border-base-300 bg-base-100 rounded-box">
   <div className="collapse-title text-xl font-medium">
-    Focus me to see content
+  Why are you using firebase? What other options do you have to implement authentication?
   </div>
   <div className="collapse-content"> 
-    <p>tabIndex={0} attribute is necessary to make the div focusable</p>
+    <p>
+        
+    Google Firebase is an application development platform that allows developers to create iOS, Android, and Web apps. Here's why you should use it!Google Firebase offers many features that pitch it as the go-to backend development tool for web and mobile apps. It reduces development workload and time. And it's a perfect prototyping tool. Firebase is simple, lightweight, friendly, and industrially recognized.Tired of writing boring code for your backend, or can't even write it at all? Try Google Firebase. So what's Google Firebase, and why should you build your app around it?
+        
+        </p>
   </div>
 </div>
 
