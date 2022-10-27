@@ -9,6 +9,8 @@ import Faq from './components/Faq';
 import Erorr from './components/Erorr';
 import LogIn from './components/LogIn';
 import Home from './components/Home';
+import LeftSide from './components/LeftSide';
+import CourseDetail from './components/CourseDetail';
 
 function App() {
 
@@ -23,7 +25,9 @@ function App() {
         },
         {
           path: '/courses',
-          element: <Courses></Courses>
+          element: <Courses></Courses>,
+          
+         
         },
         {
           path: '/blog',

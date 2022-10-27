@@ -2,7 +2,7 @@ import React from 'react';
 import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../contexts/UserContext';
-import { FaGoogle } from 'react-icons/fa';
+import { FaGithub, FaGoogle } from 'react-icons/fa';
 import { GithubAuthProvider, GoogleAuthProvider } from 'firebase/auth';
 
 
@@ -90,7 +90,7 @@ const LogIn = () => {
         </div>
         <div className="btn-group btn-group-vertical">
   <button onClick={handleGoogleSignIn} className="btn mb-3 bg-sky-500"> <FaGoogle></FaGoogle> Google</button>
-  <button onClick={handleGithubSignIn} className="btn bg-sky-600">github</button>
+  <button onClick={handleGithubSignIn} className="btn bg-sky-600"> <FaGithub></FaGithub>github</button>
 
 </div>
          
